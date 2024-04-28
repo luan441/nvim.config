@@ -7,13 +7,13 @@ return {
 				"nvim-neotest/nvim-nio",
 			},
 		},
-    "leoluz/nvim-dap-go",
+		"leoluz/nvim-dap-go",
 	},
 	config = function()
 		local dap, dapui = require("dap"), require("dapui")
 
-    dapui.setup()
-    require('dap-go').setup()
+		dapui.setup()
+		require("dap-go").setup()
 
 		dap.listeners.before.attach.dapui_config = function()
 			dapui.open()
@@ -28,9 +28,9 @@ return {
 			dapui.close()
 		end
 
-    vim.keymap.set("n", "<Leader>dt", ":DapToggleBreakpoint<CR>")
-		vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")
-		vim.keymap.set("n", "<Leader>dx", ":DapTerminate<CR>")
-		vim.keymap.set("n", "<Leader>do", ":DapStepOver<CR>")
+		vim.keymap.set("n", "<Leader>dt", ":DapToggleBreakpoint<CR>", { desc = "Toggle breakpoint" })
+		vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>", { desc = "Continue" })
+		vim.keymap.set("n", "<Leader>dx", ":DapTerminate<CR>", { desc = "Terminate" })
+		vim.keymap.set("n", "<Leader>do", ":DapStepOver<CR>", { desc = "Step over" })
 	end,
 }
