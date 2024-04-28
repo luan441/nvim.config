@@ -8,16 +8,8 @@ return {
 	init = function()
 		local lspAll = {
 			"ex.lsp.all",
-
-			-- Extends options from the `ex.lsp.single`
-
-			-- If true then only clients attached to the current buffer will be shown:
 			only_attached = false,
-
-			-- If true then every closed client will be echoed:
 			notify_enabled = true,
-
-			-- The name of highlight group which should be used in echo:
 			notify_hl = "Comment",
 		}
 		require("lualine").setup({
