@@ -11,6 +11,7 @@ return {
 				["<leader>g"] = { name = "[G]it", _ = "which_key_ignore" },
 				["<leader>c"] = { name = "[C]ode actions", _ = "which_key_ignore" },
 				["<leader>f"] = { name = "[F]ind", _ = "which_key_ignore" },
+				["<leader>p"] = { name = "[P]hpTools", _ = "which_key_ignore" },
 			})
 		end,
 	},
