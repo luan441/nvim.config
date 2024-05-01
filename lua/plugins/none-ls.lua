@@ -13,6 +13,7 @@ return {
 				null_ls.builtins.formatting.phpcsfixer,
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.diagnostics.phpstan,
+				null_ls.builtins.completion.luasnip,
 				require("none-ls.diagnostics.eslint"),
 			},
 		})
